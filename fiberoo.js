@@ -1,10 +1,8 @@
 function fib() {
   const fibArr = [];
   for (let i = 0; i < 50; i++) {
-    if (i === 0) {
-      fibArr.push(0);
-    } else if (i === 1) {
-      fibArr.push(1);
+    if (i <= 1) {
+      fibArr.push(i);
     } else {
       fibArr.push(fibArr[i - 2] + fibArr[i - 1]);
     }
